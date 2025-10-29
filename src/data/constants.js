@@ -15,16 +15,16 @@ import periscopeIcon from "../assets/icons/footer-periscope.png";
 
 // HEADER
 const menuItems = [
-  "characters",
-  "comics",
-  "movies",
-  "tv",
-  "games",
-  "collectibles",
-  "videos",
-  "fans",
-  "news",
-  "shop",
+  { title: "characters", link: "/characters" },
+  { title: "comics", link: "/comics" },
+  { title: "movies", link: "/movies" },
+  { title: "tv", link: "/tv" },
+  { title: "games", link: "/games" },
+  { title: "collectibles", link: "/collectibles" },
+  { title: "videos", link: "/videos" },
+  { title: "fans", link: "/fans" },
+  { title: "news", link: "/news" },
+  { title: "shop", link: "/shop" },
 ];
 
 //   BUY COMICS
@@ -39,29 +39,38 @@ const features = [
 //   FOOTER
 const linksFooter = {
   linksDCComics: [
-    "Characters",
-    "Comics",
-    "Movies",
-    "TV",
-    "Games",
-    "Videos",
-    "News",
+    { name: "characters", link: "/characters" },
+    { name: "comics", link: "/comics" },
+    { name: "movies", link: "/movies" },
+    { name: "TV", link: "/tv" },
+    { name: "games", link: "/games" },
+    { name: "videos", link: "/videos" },
+    { name: "news", link: "/news" },
   ],
-  linksShop: ["Shop DC", "Shop DC Collectibles"],
+  linksShop: [
+    { name: "shop DC", link: "/shop-dc" },
+    { name: "shop DC collectibles", link: "/shop-dc-collectibles" },
+  ],
   linksDC: [
-    "Terms Of Use",
-    "Privacy policy (New)",
-    "Ad Choices",
-    "Advertising",
-    "Jobs",
-    "Subscriptions",
-    "Talent Workshops",
-    "CPSC Certificates",
-    "Ratings",
-    "Shop Help",
-    "Contact Us",
+    { name: "terms of use", link: "/terms-of-use" },
+    { name: "provacy policy (new)", link: "/privacy-policy" },
+    { name: "ad choices", link: "/ad-choices" },
+    { name: "advertising", link: "/advertising" },
+    { name: "jobs", link: "/jobs" },
+    { name: "subscriptions", link: "/subscriptions" },
+    { name: "talent workshops", link: "/talent-workshops" },
+    { name: "CPSC certificates", link: "/cpsc-certificates" },
+    { name: "ratings", link: "/ratings" },
+    { name: "shop help", link: "/shop-help" },
+    { name: "contact us", link: "/contact-us" },
   ],
-  linksSites: ["DC", "MAD Magazine", "DC Kids", "DC Universe", "DC Power Visa"],
+  linksSites: [
+    { name: "DC", link: "/dc" },
+    { name: "MAD magazine", link: "/mad-magazine" },
+    { name: "DC kids", link: "/dc-kids" },
+    { name: "DC universe", link: "/dc-universe" },
+    { name: "DC power visa", link: "/dc-power-visa" },
+  ],
 };
 
 const social = [

@@ -12,15 +12,15 @@ export default function Header() {
         </div>
         <nav>
           <ul className="flex gap-[30px] uppercase text-sm font-bold -tracking-widest">
-            {menuItems.map((curItem, index) => (
+            {menuItems.map(({ title, link }, index) => (
               <li
                 key={index}
                 className={`h-[120px] flex items-center border-solid border-bg-white border-y-[5px] ${
-                  curItem === "comics" ? "active" : ""
+                  title === "comics" ? "active" : ""
                 } hover:text-dc-blue hover:border-b-dc-blue transition-all duration-150 ease-in`}
               >
-                <a className="h-full content-center" href={`/${curItem}`}>
-                  {curItem}
+                <a className="h-full content-center" href={`/${link}`}>
+                  {title}
                 </a>
               </li>
             ))}

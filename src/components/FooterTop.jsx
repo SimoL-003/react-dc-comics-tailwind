@@ -4,10 +4,10 @@ export default function FooterTop() {
   function createLinkList(array) {
     return (
       <ul>
-        {array.map((curItem, index) => (
+        {array.map(({ name, link }, index) => (
           <li key={index}>
-            <a className="hover:underline" href="">
-              {curItem}
+            <a className="capitalize hover:underline" href={link}>
+              {name}
             </a>
           </li>
         ))}

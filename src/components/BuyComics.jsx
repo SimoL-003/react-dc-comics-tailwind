@@ -4,17 +4,15 @@ export default function BuyComics() {
     <section className="bg-dc-blue text-white">
       <div className="container">
         <ul className="flex justify-around py-[50px] px-0">
-          {features.map((curFeature, index) => (
+          {features.map(({ icon, name }, index) => (
             <li key={index}>
               <a className="hover:underline" href="#">
                 <img
                   className="inline h-[54px] max-w-[54px] align-middle mr-3.5"
-                  src={curFeature.icon}
-                  alt={curFeature.name}
+                  src={icon}
+                  alt={name}
                 />
-                <span className="align-middle uppercase text-xs">
-                  {curFeature.name}
-                </span>
+                <span className="align-middle uppercase text-xs">{name}</span>
               </a>
             </li>
           ))}
