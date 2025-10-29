@@ -38,7 +38,7 @@ const features = [
 
 //   FOOTER
 const linksFooter = {
-  linksDCComics: [
+  DCComics: [
     { name: "characters", link: "/characters" },
     { name: "comics", link: "/comics" },
     { name: "movies", link: "/movies" },
@@ -47,11 +47,11 @@ const linksFooter = {
     { name: "videos", link: "/videos" },
     { name: "news", link: "/news" },
   ],
-  linksShop: [
+  Shop: [
     { name: "shop DC", link: "/shop-dc" },
     { name: "shop DC collectibles", link: "/shop-dc-collectibles" },
   ],
-  linksDC: [
+  DC: [
     { name: "terms of use", link: "/terms-of-use" },
     { name: "provacy policy (new)", link: "/privacy-policy" },
     { name: "ad choices", link: "/ad-choices" },
@@ -64,7 +64,7 @@ const linksFooter = {
     { name: "shop help", link: "/shop-help" },
     { name: "contact us", link: "/contact-us" },
   ],
-  linksSites: [
+  Sites: [
     { name: "DC", link: "/dc" },
     { name: "MAD magazine", link: "/mad-magazine" },
     { name: "DC kids", link: "/dc-kids" },

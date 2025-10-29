@@ -21,20 +21,20 @@ export default function FooterTop() {
         <div className="footerLinksList">
           <div>
             <h3>DC Comics</h3>
-            {createLinkList(linksFooter.linksDCComics)}
+            {createLinkList(linksFooter.DCComics)}
           </div>
           <div>
             <h3>Shop</h3>
-            {createLinkList(linksFooter.linksShop)}
+            {createLinkList(linksFooter.Shop)}
           </div>
         </div>
         <div className="footerLinksList">
           <h3>DC</h3>
-          {createLinkList(linksFooter.linksDC)}
+          {createLinkList(linksFooter.DC)}
         </div>
         <div className="footerLinksList">
           <h3>Sites</h3>
-          {createLinkList(linksFooter.linksSites)}
+          {createLinkList(linksFooter.Sites)}
         </div>
       </div>
     </section>
