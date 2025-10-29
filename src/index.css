@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  /* FONT */
+  --font-sans: "Open Sans", sans-serif;
+
+  /* COLORS */
+  --color-white: #fff;
+  --color-light-gray: rgb(149, 149, 149);
+  --color-dark-gray: rgb(48, 48, 48);
+  --color-dc-blue: rgb(56, 128, 241);
+  --color-dc-blue-hover: rgb(0, 66, 171);
+  --color-bg-white: #fff;
+  --color-bg-dark-black: rgb(28, 28, 28);
+  --color-bg-dark-gray: var(--color-dark-gray);
+}
+
+@layer base {
+  h3 {
+    @apply text-white;
+    @apply uppercase;
+    @apply text-base;
+    @apply py-4;
+    @apply px-0;
+  }
+}
+
+@layer components {
+  .button {
+    @apply py-[13px];
+    @apply px-[60px];
+    @apply text-xs;
+    @apply uppercase;
+    @apply bg-dc-blue;
+    @apply text-white;
+    @apply border-0;
+    @apply font-bold;
+    @apply hover:bg-dc-blue-hover;
+    cursor: pointer;
+    transition: 150ms ease-in;
+  }
+
+  .footerLinksList {
+    @apply pt-4;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    @apply text-light-gray;
+    @apply text-xs;
+  }
+}
+
+@utility container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+nav .active {
+  border-bottom-color: var(--color-dc-blue);
+  color: var(--color-dc-blue);
+}
+
+.footerTop {
+  background-image: url(./assets/images/footer-bg.jpg);
+  background-size: cover;
+}
