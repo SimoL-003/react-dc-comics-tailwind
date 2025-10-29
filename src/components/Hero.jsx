@@ -17,8 +17,8 @@ export default function Hero() {
           </h2>
           <div>
             <ul className="grid grid-cols-[repeat(6,minmax(100px,1fr))] justify-items-center">
-              {comics.map(({ series, thumb }) => (
-                <ComicCard title={series} img={thumb} />
+              {comics.map(({ id, series, thumb }) => (
+                <ComicCard key={id} title={series} img={thumb} />
               ))}
             </ul>
           </div>
