@@ -1,10 +1,10 @@
 // ICONS
 // BuyComics
-import digitalComics from "../assets/icons/buy-comics-digital-comics.png";
-import merchandise from "../assets/icons/buy-comics-merchandise.png";
-import subscription from "../assets/icons/buy-comics-subscriptions.png";
-import shopLocator from "../assets/icons/buy-comics-shop-locator.png";
-import powerVisa from "../assets/icons/buy-dc-power-visa.svg";
+import digitalComicsIcon from "../assets/icons/buy-comics-digital-comics.png";
+import merchandiseIcon from "../assets/icons/buy-comics-merchandise.png";
+import subscriptionIcon from "../assets/icons/buy-comics-subscriptions.png";
+import shopLocatorIcon from "../assets/icons/buy-comics-shop-locator.png";
+import powerVisaIcon from "../assets/icons/buy-dc-power-visa.svg";
 
 // Footer
 import facebookIcon from "../assets/icons/footer-facebook.png";
@@ -29,11 +29,11 @@ const menuItems = [
 
 //   BUY COMICS
 const features = [
-  { name: "Digital comics", icon: digitalComics },
-  { name: "DC Merchandise", icon: merchandise },
-  { name: "Subscription", icon: subscription },
-  { name: "Comic Shop Locator", icon: shopLocator },
-  { name: "DC Power Visa", icon: powerVisa },
+  { name: "Digital comics", icon: digitalComicsIcon },
+  { name: "DC Merchandise", icon: merchandiseIcon },
+  { name: "Subscription", icon: subscriptionIcon },
+  { name: "Comic Shop Locator", icon: shopLocatorIcon },
+  { name: "DC Power Visa", icon: powerVisaIcon },
 ];
 
 //   FOOTER

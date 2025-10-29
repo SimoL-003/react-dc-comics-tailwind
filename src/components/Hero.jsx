@@ -1,20 +1,8 @@
 import comics from "../data/comics";
 import heroImg from "../assets/images/jumbotron.jpg";
+import ComicCard from "./ComicCard";
 
 export default function Hero() {
-  function createComicCard(comic) {
-    return (
-      <li key={comic.id} className="w-[90%] max-w-[220px]">
-        <img
-          className="object-cover object-top aspect-square"
-          src={comic.thumb}
-          alt={comic.series}
-        />
-        <span className="block pt-5 pb-[50px]">{comic.series}</span>
-      </li>
-    );
-  }
-
   return (
     <section>
       <div className="bg-bg-dark-black text-white">
@@ -29,7 +17,9 @@ export default function Hero() {
           </h2>
           <div>
             <ul className="grid grid-cols-[repeat(6,minmax(100px,1fr))] justify-items-center">
-              {comics.map((curComic) => createComicCard(curComic))}
+              {comics.map(({ series, thumb }) => (
+                <ComicCard title={series} img={thumb} />
+              ))}
             </ul>
           </div>
           <div className="pb-5 text-center">

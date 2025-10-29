@@ -6,7 +6,7 @@ export default function Header() {
     <header className="h-[120px] text-text-primary bg-bg-white text-dark-gray">
       <div className="container flex justify-between items-center h-full">
         <div>
-          <a href="#">
+          <a href="../index.html">
             <img className="w-20" src={logo} alt="Logo DC" />
           </a>
         </div>
@@ -19,7 +19,7 @@ export default function Header() {
                   title === "comics" ? "active" : ""
                 } hover:text-dc-blue hover:border-b-dc-blue transition-all duration-150 ease-in`}
               >
-                <a className="h-full content-center" href={`/${link}`}>
+                <a className="h-full content-center" href={link}>
                   {title}
                 </a>
               </li>
